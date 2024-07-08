@@ -5,7 +5,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
- const fetchHandler = async (req, res) => {
+ const fetchHandler = async (req : any, res : any) => {
   try {
     const booksNames: BookRequest = req.body.booksNames;
 

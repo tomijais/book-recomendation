@@ -9,7 +9,7 @@ export default function Home() {
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const handleBookSubmit = async (titles) => {
+  const handleBookSubmit = async (titles: any) => {
     setLoading(true);
 
     try {

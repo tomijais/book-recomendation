@@ -1,7 +1,8 @@
 import React from 'react';
 import BookCard from './BookCard';
+import { BookRecommendation } from '../interface/book.request.interface';
 
-const BookRecommendations = ({ recommendations, loading }) => {
+const BookRecommendations = ({ recommendations, loading }: {recommendations: BookRecommendation[], loading: boolean}) => {
   if (loading) {
     return <div>Loading...</div>;
   }
